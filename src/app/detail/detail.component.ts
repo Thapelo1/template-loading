@@ -8,7 +8,7 @@ import { User, Person } from '../shared/interfaces/user.interface';
 })
 export class DetailComponent implements OnInit {
 
-  @Input() person!: Person;
+  @Input() person: Person | undefined | null;
 
   constructor() { }
 

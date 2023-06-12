@@ -2,10 +2,8 @@
   <header>
     <h1>Loading skeleton</h1>
   </header>
-
    <main class="content" >
-     <app-detail-card *ngIf="person$ | async as person"
-     [person]="person">
+     <app-detail-card *ngIf="{person: person$ | async} as vm" [person]="vm.person">
      </app-detail-card>
    </main>
 </div>

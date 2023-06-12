@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {delay, Observable, of} from "rxjs";
-import {Person} from "../shared/interfaces/user.interface";
+import { Person } from '../shared/interfaces/user.interface';
+
+
 
 @Component({
   selector: 'app-home',

@@ -1,6 +1,11 @@
-<div class="card">
+<div class="card" *ngIf="person; else loading">
   <div class="card-body">
     <h4 class="card-title">Hi {{person.name}}</h4>
     <p>I am a component that needs to wait for some input</p>
   </div>
 </div>
+
+<ng-template #loading>
+  <ngx-skeleton-loader count="2" appearance="line" animation="pulse">
+  </ngx-skeleton-loader>
+</ng-template>
